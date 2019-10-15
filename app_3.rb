@@ -23,12 +23,11 @@ while my_game.is_still_ongoing?
     my_game.menu_choice(decision)
     my_game.enemies_attack
   puts  "Appuie sur une touche pour continuer"
+  print "<"
     gets.chomp
-
-
-    
+ 
 end
-puts my_game.end
+my_game.end
 
 
 binding.pry

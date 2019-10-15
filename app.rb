@@ -34,5 +34,6 @@ end
 puts player1.show_state
 puts player2.show_state
 
+binding.pry
 
 

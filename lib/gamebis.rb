@@ -56,7 +56,7 @@ class Gamebis
     puts "s - chercher à se soigner
     "
     
-    puts "attaquer un joueur en vue :"
+    puts "attaquer un joueur en vue (entre son numéro):"
 
     @enemies.each do |enemy|
         if enemy.life_points > 0

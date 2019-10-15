@@ -23,7 +23,7 @@ while my_game.is_still_ongoing?
     my_game.enemies_attack
     gets.chomp
 end
-puts my_game.end
+my_game.end
 
 
 binding.pry

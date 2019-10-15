@@ -93,15 +93,15 @@ end
     
 def menu_choice(string)
 
-until string == "a" || string == "s" || string.to_i.between?(0,enemies_in_sight.count) do
-    puts "veuillez rentrer une action possible ou attaquer un numéro de joueur existant, votre tour passe"
+until string == "a" || string == "s" || string.to_i.between?(0,enemies_in_sight.count-1) do
+    puts "veuillez rentrer une action possible ou attaquer un numéro de joueur existant"
     string = gets.chomp
 end
     if string == "a"
         @human_player.search_weapon
     elsif string == "s"
         @human_player.search_health_pack
-    elsif string.to_i.between?(0,enemies_in_sight.count)
+    else
             @human_player.attacks(@enemies_in_sight[string.to_i])
             if @enemies_in_sight[string.to_i].life_points <= 0
                 puts "

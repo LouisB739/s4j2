@@ -24,7 +24,7 @@ end
 def attacks(player)
     puts"                                  
         "
-    puts  "le joueur #{self.name} attaque le joueur #{player.name}"
+    puts  "le joueur #{@name} attaque le joueur #{player.name}"
     damage = compute_damage
     player.gets_damage(damage)
     if @life_points <= 0
@@ -34,7 +34,7 @@ def attacks(player)
     else
         puts"                                  
         "
-    puts "#{self.name} inflige #{damage} points de dégats"
+    puts "#{@name} inflige #{damage} points de dégats"
     puts"                                  
         "
     end
