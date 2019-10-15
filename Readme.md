@@ -1,5 +1,5 @@
 
-3 applications et une additionnelle 
+3 applications et une additionnelle (j'ai dupliqué pour éviter de tout casser et j'ai laissé comme ça)
 
 
 App 1 permet de faire combattre de 2 joueurs (José et Josianne)
