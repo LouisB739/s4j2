@@ -118,6 +118,8 @@ end
 #Simule l'attaque de tous les joueurs dans l'array enemies_in_sight sur le joueur humain
  
  def enemies_attack
+
+    if not @enemies_in_sight.empty?
     puts "------ "
     puts "Les autres joueurs t'attaquent !"
     puts " ------"
@@ -125,6 +127,7 @@ end
     @enemies_in_sight.each do | players |
             players.attacks(@human_player)   
     end
+end
 
   end
 #Message de fin

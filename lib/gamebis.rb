@@ -92,12 +92,15 @@ def menu_choice(string)
  
 
  def enemies_attack
+
+    if not @enemies.empty?
  
     puts "Les autres joueurs t'attaquent !"
 
     @enemies.each do | players |
             players.attacks(@human_player)   
     end
+end
 
   end
 
