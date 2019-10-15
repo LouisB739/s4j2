@@ -22,7 +22,11 @@ while my_game.is_still_ongoing?
     decision = gets.chomp.to_s
     my_game.menu_choice(decision)
     my_game.enemies_attack
+  puts  "Appuie sur une touche pour continuer"
     gets.chomp
+
+
+    
 end
 puts my_game.end
 

@@ -11,7 +11,7 @@ end
 
 #Montre le nom et le nb de points de vie restant
 def show_state
-    return "#{@name} a #{@life_points} poitns de vie"
+    return "#{@name} a #{@life_points} points de vie"
 end
 
 #Inflige les dommages aux points de vie
@@ -22,13 +22,21 @@ end
 
 #Simule une attack entre deux joueurs
 def attacks(player)
+    puts"                                  
+        "
     puts  "le joueur #{self.name} attaque le joueur #{player.name}"
     damage = compute_damage
     player.gets_damage(damage)
     if @life_points <= 0
+        puts"                                  
+        "
         puts "Le joueur #{@name} a été tué"
     else
+        puts"                                  
+        "
     puts "#{self.name} inflige #{damage} points de dégats"
+    puts"                                  
+        "
     end
 end
 
@@ -64,6 +72,8 @@ def compute_damage
   end
 
 
+  #Permet de simuler la recherche d'une arme. On applique ensuite un coefficient à l'attaque (grâce à la fonction compute_damage juste au dessus)
+
 def search_weapon
     new_weapon_level = rand(1..6)
     puts "Tu as trouvé une arme de niveau #{new_weapon_level}"
@@ -75,6 +85,8 @@ def search_weapon
     end
 
 end
+
+#Permet de simuler l'augmentation du nb de point lorsque le joueur humain trouve un pack de vie
 
 def search_health_pack
     search = rand(1..6)
