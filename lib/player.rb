@@ -80,6 +80,7 @@ def search_weapon
     if new_weapon_level > @weapon_level
         @weapon_level = new_weapon_level
         puts "Youhou ! elle est meilleure que ton arme actuelle : tu la prends."
+        sleep(2)
     else 
         puts "M@*#$... elle n'est pas mieux que ton arme actuelle..."
     end
